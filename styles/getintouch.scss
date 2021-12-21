@@ -1,0 +1,119 @@
+@import "colors";
+
+.page__getintouch {}
+.getintouch {
+  @media (max-width: 992px) {
+    & {
+      padding: 50px 0;
+    }
+  }
+  padding: 80px 0 135px 0;
+
+  .getintouch__container {
+
+    .getintouch__header {
+      @media (max-width: 992px) {
+        & {
+          margin: 0 0 50px 0;
+        }
+      }
+      @media (max-width: 767px) {
+        & {
+          margin: 0 0 30px 0;
+        }
+      }
+
+      margin: 0 0 80px 0;
+    }
+    .getintouch__items {
+      @media (min-width: 992px) {
+        & {
+          margin: 0;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      margin: 0 -15px;
+
+      .getintouch__item {
+        flex: 0 1 33.333%;
+      }
+      .item-getintouch {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #fff;
+        padding: 50px 15px;
+
+        & > *:not(:last-child) {
+          margin: 0 0 15px 0;
+        }
+        .item-getintouch__icon {}
+        .item-getintouch__emails {
+
+          .item-getintouch__email {
+            color: inherit;
+            font-weight: 600;
+            line-height: 150%;
+            font-size: 16px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .item-getintouch__label {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 150%;
+        }
+        .item-getintouch__button {
+          min-height: 44px;
+          padding: 5px 20px;
+
+          color: #ff7b47;
+          border-radius: 5px;
+          border: 1px solid #ff7b47;
+          line-height: 142%;
+
+          display: flex;
+          font-weight: 600;
+          justify-content: center;
+          align-items: center;
+
+          text-align: center;
+          transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+
+          &:hover {
+            background: $primary-color;
+            color: $light-text-color;
+          }
+        }
+      }
+      .item-getintouch_active {
+        @media (max-width: 992px) {
+          & {
+            padding: 50px 15px;
+          }
+        }
+        padding: 80px 15px;
+
+        background: $dark-background-color;
+        color: $light-text-color;
+
+        .item-getintouch__button {
+          border: 1px solid $light-text-color;
+          color: $light-text-color;
+        }
+      }
+    }
+  }
+}

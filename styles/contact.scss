@@ -1,0 +1,63 @@
+@import "colors";
+
+.page__contact {}
+.contact {
+  padding: 42px 0;
+  background: $light-background-color;
+
+  .contact__container {
+
+    .contact__body {
+      @media (min-width: 767px) {
+        & {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+
+      .contact__content {
+        @media (min-width: 767px) {
+          & {
+            padding: 0 25px 0 0;
+          }
+        }
+
+        padding: 0 0 25px 0;
+
+        .contact__title {
+          font-size: 24px;
+          font-weight: 700;
+          letter-spacing: 0.1px;
+          line-height: 133%;
+
+          &:not(:last-child) {
+            margin: 0 0 10px 0;
+          }
+        }
+        .contact__text {
+          color: $second-text-color;
+          line-height: 142%;
+        }
+      }
+      .contact__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        color: $light-text-color;
+        background: $primary-color;
+
+        border-radius: 5px;
+        min-height: 58px;
+        padding: 5px 40px;
+
+        transition: background 0.3s ease-in-out 0s;
+        &:hover {
+          background: #aa5330;
+        }
+      }
+    }
+  }
+}
